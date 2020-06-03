@@ -10,9 +10,12 @@ class Wardrobe2 extends Component {
       { type: "accessory", color: "sapphire", size: "" },
       { type: "accessory", color: "lilac", size: "" },
     ]
+    const filteredWardrobe = wardrobe.filter(w => w.color === 'blue')
+    return(
+      filteredWardrobe.map(w => <Article key = {filteredWardrobe.indexOf(w)} info={w} />)
 
-    return
-    {/* your code here */ }
+      
+    )
 
   }
 }
